@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Hind:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&family=Oswald:wght@200;400&display=swap%27');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ae9348;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: rgba(3, 3, 4, 0.708);
+    padding: 10px;
+    align-items: center;
+    z-index: 1;
+
+
+
+}
+
+.logo {
+    font-family: 'Caveat';
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    gap: 2px;
+    position: relative;
+}
+
+nav a {
+    font-family: 'Hind';
+    font-weight: 600;
+    padding-right: 10px;
+    font-size: 23px;
+    border-right-style: solid;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hamburgesa {
+    display: none;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.hamburgesa input {
+    display: none;
+}
+
+.hamburgesa ul {
+    display: none;
+    list-style: none;
+    width: 50vh;
+    background-color: rgba(3, 3, 4, 0.708);
+    padding-left: 10px;
+    backdrop-filter: blur(3px);
+
+}
+
+.hamburgesa a {
+    border-right-style: none;
+}
+
+.hamburgesa a {
+    border-right-style: none;
+}
+
+.hamburgesa input:checked~ul {
+
+    display: block;
+    position: fixed;
+    margin-top: 100px;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+
+
+body {
+
+    background-color: #fffffc;
+    background-color: #a38560;
+    background-image: linear-gradient(315deg, #a38560 0%, #e0d4ae 74%);
+
+
+
+}
+
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.video {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+
+h1 {
+
+    font-family: 'Caveat';
+    color: #ae9348;
+    padding-top: 15%;
+
+
+}
+
+h1 span {
+    display: block;
+    text-align: center;
+}
+
+.sUno {
+    font-size: 8vw;
+}
+
+.sDos {
+    font-size: 9vw;
+}
+
+.sTres {
+    font-size: 7vw;
+}
+
+
+.about {
+
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.imagenBodega {
+
+    width: 65%;
+    height: 100%;
+    background-image: url("./Bodega.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.aboutTexto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    /* text-align: center; */
+    width: 35%;
+    padding: 0px 50px;
+
+}
+
+.aboutTexto button {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.7rem 1rem;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid;
+    border-color: #ffffff;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 30px;
+    margin-top: 40px;
+    cursor: pointer;
+
+
+}
+
+
+.aboutTexto button:hover {
+    background: #fffdfd;
+    color: rgb(0, 0, 0)
+}
+
+
+
+.visitanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    font-style: italic;
+    position: absolute;
+    padding: 0px 50px;
+
+    font-family: 'Hind';
+    color: white;
+    font-size: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.221);
+    backdrop-filter: blur(2px);
+    z-index: 0;
+}
+
+
+
+
+.slider {
+
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+
+
+}
+
+
+.slider ul {
+    display: flex;
+    animation: cambio 5s infinite alternate linear;
+    width: 400%;
+
+
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+
+
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+
+
+}
+
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: rgb(22, 26, 26);
+    background-image: url(./productosBackground.jpg);
+    background-size: cover;
+    min-height: 90vh;
+    color: white;
+    font-family: 'hind';
+    font-size: 20px;
+
+}
+
+
+.contenedorProductos {
+
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 45%;
+    justify-content: space-around;
+    gap: 30px;
+
+
+
+}
+
+.item {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    background-size: cover;
+
+    width: 20%;
+    height: 450px;
+
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 3px rgba(213, 219, 223, 0.8);
+
+
+
+}
+
+.hoverItem {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: all 0.5s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-family: 'hind';
+
+}
+
+.hoverItem a {
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+.hoverItem:hover {
+
+    opacity: 1;
+    backdrop-filter: blur(3px);
+}
+
+
+
+.item:nth-child(1) {
+    background-image: url("./catalogo1.png");
+}
+
+.item:nth-child(2) {
+    background-image: url("./catalogo2.jpg");
+}
+
+.item:nth-child(3) {
+    background-image: url("./catalogo3.jpg");
+}
+
+.item:nth-child(4) {
+    background-image: url("./Catalogo4.jpg");
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(30, 30, 31);
+    color: rgb(84, 84, 84);
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+}
+
+.redes {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    gap: 10px;
+}
+
+
+.iconosRedes {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.redes img {
+    width: 40px;
+}
+
+.correo {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+@media (max-width:1230px) {
+
+    .contenedorProductos {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 40%;
+        height: 356px;
+        max-width: none;
+    }
+
+    h1 {
+        padding-top: 25%;
+    }
+
+}
+
+@media (max-width:1142px) {
+
+    .about {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .imagenBodega {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutTexto {
+        width: 80%;
+        height: 35%;
+        padding: 34px 50px;
+    }
+
+}
+
+@media (max-width:950px) {
+
+    header {
+
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+
+}
+
+@media (max-width:813px) {
+    .visitanos {
+        font-size: 2vh;
+        width: 45%;
+    }
+
+    .aboutTexto {
+        padding: 15px 19px;
+
+    }
+
+    h1 {
+        padding-top: 50%;
+    }
+
+}
+
+@media (max-width:742px) {
+
+    .visitanos {
+        width: 50%;
+
+    }
+
+}
+
+@media (max-width:650px) {
+
+
+    .visitanos {
+        width: 70%;
+    }
+
+    .aboutTexto button {
+        margin-top: 11px;
+        padding: 0.3rem 0.3rem;
+
+
+    }
+
+    .aboutTexto {
+        font-size: 11px;
+
+
+    }
+
+}
+
+@media (max-width:635px) {
+
+    header {
+        flex-direction: row;
+
+
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .hamburgesa {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .item {
+
+        height: 280px;
+    }
+
+    .contacto {
+        flex-direction: column;
+
+    }
+
+    .redes {
+
+        width: 100%;
+        height: 50%;
+        padding: 0%;
+        align-items: center;
+
+    }
+
+    .correo {
+        width: 100%;
+    }
+
+
+}
+
+
+@media (max-width:550px) {
+
+    .hoverItem {
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width:500px) {
+
+    .hamburgesa input:checked~ul {
+        margin-top: 100px;
+        text-align: center;
+
+
+    }
+
+}
+
+
+@media (max-width:475px) {
+
+    .sUno {
+        font-size: 15vw;
+    }
+
+    .sDos {
+        font-size: 13vw;
+    }
+
+    .sTres {
+        font-size: 10vw;
+    }
+
+    .aboutTexto {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .aboutTexto button {
+        margin-top: 11px;
+        padding: 0.2rem 0.2rem;
+        font-size: 16px;
+    }
+
+    .item {
+
+        height: 240px;
+    }
+
+    .visitanos {
+        width: 70%;
+        padding: 0px 15px;
+        font-size: 1.7vh;
+
+    }
+
+
+}
+
+@media (max-width:410px) {
+
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo img {
+
+        height: 44px;
+
+    }
+
+    .hamburgesa input:checked~ul {
+        margin-top: 90px;
+        text-align: end
+    }
+
+    h1 {
+        padding-top: 60%;
+    }
+
+    .item {
+        height: 200px;
+    }
+
+    .sUno {
+        font-size: 20vw;
+    }
+
+    .sDos {
+        font-size: 17vw;
+    }
+
+    .sTres {
+        font-size: 14vw;
+    }
+
+    .hoverItem {
+        font-size: 10px;
+
+    }
+
+}

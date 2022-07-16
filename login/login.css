@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Hind:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&family=Oswald:wght@200;400&display=swap%27');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ae9348;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: rgba(3, 3, 4, 0.708);
+    padding: 10px;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.logo {
+    font-family: 'Caveat';
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    gap: 2px;
+    position: relative;
+}
+
+nav a {
+    font-family: 'Hind';
+    font-weight: 600;
+    padding-right: 10px;
+    font-size: 23px;
+    border-right-style: solid;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hamburgesa {
+    display: none;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.hamburgesa input {
+    display: none;
+}
+
+.hamburgesa ul {
+    display: none;
+    list-style: none;
+    width: 50vh;
+    background-color: rgba(3, 3, 4, 0.708);
+    padding-left: 10px;
+    backdrop-filter: blur(3px);
+
+}
+
+.hamburgesa a {
+    border-right-style: none;
+}
+
+.hamburgesa a {
+    border-right-style: none;
+}
+
+.hamburgesa input:checked~ul {
+
+    display: block;
+    position: fixed;
+    margin-top: 100px;
+    right: 0;
+    top: 0;
+}
+
+
+
+body {
+
+    background-image: url(/Entregas_EduFlow/Integrador_1/LogRegisBackground.jpeg);
+    background-size: cover;
+
+}
+
+.login {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorLogin {
+
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.601);
+    backdrop-filter: blur(15px);
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+
+    font-size: 25px;
+    font-family: 'caveat';
+    color: #ae9348;
+
+    gap: 20px;
+}
+
+.contenedorLogin input {
+
+    width: 50%;
+    height: 30px;
+
+    font-size: 19px;
+    color: aliceblue;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 2px solid #afa27d;
+}
+
+.contenedorLogin button {
+
+    height: 6%;
+    width: 20%;
+    border-radius: 20px;
+    background: linear-gradient(23deg, rgba(230, 191, 16, 0.721) 0%, rgba(121, 108, 9, 1) 55%, rgb(190, 165, 21) 100%);
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedorLogin button:hover {
+
+    cursor: pointer;
+    background: linear-gradient(23deg, rgba(230, 191, 16, 0.982) 0%, rgba(121, 108, 9, 0.462) 55%, rgb(190, 165, 21) 100%);
+
+}
+
+.contenedorLogin button:focus {
+
+    cursor: pointer;
+    background: linear-gradient(23deg, rgba(0, 0, 0, 0.721) 0%, rgba(121, 108, 9, 1) 55%, rgb(179, 164, 80) 100%);
+
+}
+
+
+
+.goToRegister h2 {
+
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    font-size: 28px;
+    color: #ae9348;
+    text-align: center;
+
+}
+
+
+.contenedorLogin a {
+
+    text-decoration: underline;
+    color: #d8ad38;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:1520px) {
+
+    .contenedorLogin {
+
+        width: 70%;
+        height: 67%;
+
+    }
+
+}
+
+@media (max-width:950px) {
+
+    header {
+
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+
+}
+
+
+@media (max-width:715px) {
+
+    .contenedorLogin {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .contenedorLogin input {
+        width: 90%;
+    }
+}
+
+@media (max-width:635px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .hamburgesa {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:500px) {
+
+    .hamburgesa input:checked~ul {
+        margin-top: 100px;
+        text-align: center;
+
+
+    }
+
+}
+
+@media (max-width:410px) {
+
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo img {
+
+        height: 44px;
+
+    }
+
+    .hamburgesa input:checked~ul {
+        margin-top: 90px;
+        text-align: end
+    }
+}
