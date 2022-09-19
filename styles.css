@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     scroll-behavior: smooth;
+    scroll-padding-top: 10%;
 
 }
 
@@ -188,12 +189,19 @@ h1 span {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     /* text-align: center; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
     width: 35%;
+    height: 100%;
     padding: 0px 50px;
 
 }
 
 .aboutTexto button {
+
     color: #000000;
     font-size: 20px;
     font-weight: 500;
@@ -204,7 +212,7 @@ h1 span {
     transition: all 0.3s ease;
     position: relative;
     border-radius: 30px;
-    margin-top: 40px;
+    margin-top: 10px;
     cursor: pointer;
 
 
@@ -235,6 +243,8 @@ h1 span {
     backdrop-filter: blur(2px);
     z-index: 0;
 }
+
+
 
 
 
@@ -425,6 +435,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 2px;
 
 
     height: 100%;
@@ -433,11 +444,17 @@ footer {
     color: white;
 }
 
+.copyright {
+    font-size: 19px;
+
+}
+
 .redes {
     width: 50%;
     height: 70%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     padding-left: 50px;
     gap: 10px;
@@ -446,7 +463,7 @@ footer {
 
 .iconosRedes {
     display: flex;
-    width: 20%;
+    width: 40%;
     justify-content: space-around;
 }
 
@@ -459,6 +476,8 @@ footer {
     height: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -495,13 +514,18 @@ footer {
 
     .aboutTexto {
         width: 80%;
-        height: 35%;
+        /* height: 35%; */
         padding: 34px 50px;
     }
 
 }
 
 @media (max-width:950px) {
+
+    * {
+        scroll-padding-top: 16%;
+
+    }
 
     header {
 
