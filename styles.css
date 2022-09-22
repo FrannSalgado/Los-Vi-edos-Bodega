@@ -421,23 +421,24 @@ h1 span {
 
 footer {
     width: 100%;
-    height: 200px;
+    height: 70vh;
+
     background-color: rgb(30, 30, 31);
     color: rgb(84, 84, 84);
     font-size: 11px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
 
 
 }
 
 .contacto {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 2px;
-
-
     height: 100%;
     width: 100%;
     font-size: 20px;
@@ -445,26 +446,67 @@ footer {
 }
 
 .copyright {
-    font-size: 19px;
+    font-size: 17px;
 
+}
+
+.mapa {
+    /* background-color: aqua; */
+    width: 50%;
+    height: max(50%, 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.where {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    ;
+    font-size: 20px;
+    width: max(200px, 60%);
+    height: max(40px, 10%);
+    background-color: rgba(172, 56, 11, 0.925);
+    margin-right: 10px;
+}
+
+.googleMap {
+    width: max(200px, 400px, 50%, 80%);
+    height: 70%;
+    margin-right: 10px;
+
+
+    /* border: 5px outset rgba(218, 137, 32, 0.877); */
+    /* border-radius: 7px; */
 }
 
 .redes {
     width: 50%;
-    height: 70%;
+    height: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding-left: 50px;
+    align-items: center;
+    font-size: 100%;
+    /* padding-left: 50px; */
     gap: 10px;
 }
 
 
 .iconosRedes {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40%;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    gap: 15px;
 }
 
 .redes img {
@@ -472,9 +514,10 @@ footer {
 }
 
 .correo {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 40%;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -544,6 +587,14 @@ footer {
         width: 45%;
     }
 
+    .mapa {
+        width: 100%;
+    }
+
+    .contacto {
+        flex-direction: column;
+    }
+
     .aboutTexto {
         padding: 15px 19px;
 
@@ -609,10 +660,7 @@ footer {
         height: 280px;
     }
 
-    .contacto {
-        flex-direction: column;
 
-    }
 
     .redes {
 
@@ -694,6 +742,9 @@ footer {
 
 @media (max-width:410px) {
 
+    .googleMap {
+        display: none;
+    }
 
     .logo {
         font-size: 20px;
@@ -703,6 +754,10 @@ footer {
 
         height: 44px;
 
+    }
+
+    .redes {
+        font-size: 85%;
     }
 
     .hamburgesa input:checked~ul {
